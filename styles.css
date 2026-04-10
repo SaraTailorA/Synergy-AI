@@ -46,6 +46,8 @@ header {
     display: flex; /* Flexbox nos ayuda a poner el logo y el menú en la misma línea */
     justify-content: space-between; /* Separa el logo a la izq y menú a la der */
     align-items: center; /* Centra verticalmente */
+    position:sticky;
+    top:0
 }
 
 nav ul {
@@ -113,8 +115,9 @@ input, textarea {
     border-radius: 4px;
 }
 
-img{
-    
+.class-logo{
+    width: 300px;
+    margin: 50%;
 }
 
 /* 7. PIE DE PÁGINA (FOOTER) */
