@@ -7,8 +7,8 @@
     --text-muted: #86868b;
     --card-bg: #ffffff;
     --border-color: #e5e5ea;
-    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.05);
-    --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.08);
+    --shadow-soft: 0 4px 12px #0000000D;
+    --shadow-hover: 0 10px 24px #00000014;
     --radius: 16px;
     --transition: all 0.3s ease;
 }
@@ -45,7 +45,7 @@ a:hover {
 }
 
 .site-header {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #FFFFFFD9;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
     padding: 15px 0;
@@ -239,7 +239,7 @@ h3 {
 }
 
 .cta p {
-    color: rgba(255, 255, 255, 0.85);
+    color: #FFFFFFD9;
     margin-bottom: 10px;
 }
 
@@ -368,7 +368,7 @@ input:focus,
 select:focus,
 textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+    box-shadow: 0 0 0 3px  #0071E326;
 }
 
 input::placeholder,
