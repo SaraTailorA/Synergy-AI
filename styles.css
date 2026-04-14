@@ -5,9 +5,24 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+/* HEADINGS & BRANDING (Montserrat)
+   Aplicamos Montserrat a todos los niveles de títulos y elementos de marca
+*/
+h1, h2, h3, h4, h5, h6, 
+.logo-text, 
+.nav-menu a, 
+.btn, 
+.team-role, 
+form label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+/* BODY & CONTENT (Inter)
+   Aplicamos Inter como la fuente base para todo el contenido descriptivo
+*/
 body {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", sans-serif;
     background-color: #F8F7F4;
     color: #2b2b2b;
     line-height: 1.6;
@@ -28,13 +43,20 @@ body {
     border-bottom: 3px solid #AA7229;
 }
 
+.logo-container {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo {
     width: 60px;
     display: block;
-    margin-bottom: 10px;
 }
 
-.site-header h1 {
+.logo-text {
     font-size: 24px;
     letter-spacing: 1px;
 }
@@ -51,6 +73,7 @@ body {
     text-decoration: none;
     color: #D8E0C7;
     font-weight: 500;
+    font-size: 0.95rem;
     transition: 0.3s;
 }
 
@@ -69,24 +92,30 @@ body {
     text-align: center;
 }
 
-.hero h2 {
-    font-size: 28px;
+.hero h1 {
+    font-size: 32px;
     margin-bottom: 15px;
     color: #3a3a3a;
-}
-
-.hero p {
-    margin-bottom: 15px;
 }
 
 /* LIST */
 .benefits-list {
     list-style: none;
-    margin: 20px 0;
+    margin: 25px 0;
+    text-align: left;
+    display: inline-block;
 }
 
 .benefits-list li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefit-img {
+    width: 25px;
+    height: 25px;
 }
 
 /* BUTTON */
@@ -94,15 +123,16 @@ body {
     display: inline-block;
     background-color: #AA7229;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    letter-spacing: 0.5px;
     transition: 0.3s;
 }
 
 .btn:hover {
     background-color: #8c5c21;
+    transform: translateY(-2px);
 }
 
 /* CARDS */
@@ -115,14 +145,10 @@ body {
     border-left: 5px solid #6E7D4E;
 }
 
-.card h2 {
-    margin-bottom: 10px;
-}
-
 /* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -130,54 +156,49 @@ body {
 /* TEAM */
 .team-card {
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
     border-top: 4px solid #6E7D4E;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .team-avatar {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.team-role {
-    color: #AA7229;
-    font-weight: bold;
-}
-
-/* CONTACT GRID */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 
 /* FORM */
 form {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 form label {
-    margin-top: 10px;
-    font-weight: bold;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #4a4a4a;
 }
 
 form input,
 form select,
 form textarea {
-    padding: 10px;
-    margin-top: 5px;
+    font-family: "Inter", sans-serif; /* Texto de entrada limpio */
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: #fff;
 }
 
 form input:focus,
-form textarea:focus,
-form select:focus {
+form textarea:focus {
     outline: none;
     border-color: #6E7D4E;
+    box-shadow: 0 0 0 2px rgba(110, 125, 78, 0.2);
 }
 
 /* FOOTER */
@@ -185,26 +206,28 @@ form select:focus {
     background-color: #6E7D4E;
     color: #D8E0C7;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 40px 20px;
+    margin-top: 60px;
 }
 
-/* MAP */
-iframe {
-    border-radius: 10px;
+.site-footer a {
+    color: #F0C48C;
+    text-decoration: none;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
     }
 
     .contact-grid {
         grid-template-columns: 1fr;
     }
 
-    .hero h2 {
-        font-size: 22px;
+    .hero h1 {
+        font-size: 24px;
     }
 }
