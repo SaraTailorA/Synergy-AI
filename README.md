@@ -1,8 +1,8 @@
-# 🤖 SynergyIA — AI Consulting for Business Growth
+# SynergyIA — AI Consulting for Business Growth
 
 ![SynergyIA Banner](SynergyIA.png)
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [About the Project](#about-the-project)
 - [Live Demo](#live-demo)
