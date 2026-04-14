@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Synergy AI</title>
-    <meta name="description" content="Contact Synergy AI for AI consulting, strategy, implementation, and training services.">
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact | SynergyIA</title>
+    <meta name="description" content="Contact SynergyIA for AI consulting, strategy, implementation, and training services.">
+    <link rel="stylesheet" href="old.css">
     <link rel="icon" type="image/png" href="SynergyIA.png">
 </head>
 <body>
+
     <header class="site-header">
         <div class="container">
-            <img class="logo" src="SynergyIA.png" alt="SynergyIA logo">
-            <h1>Contact Us</h1>
+            <a href="index.html" class="logo-container">
+                <img class="logo" src="SynergyIA.png" alt="SynergyIA logo">
+                <span class="logo-text">SynergyIA</span>
+            </a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
@@ -25,8 +28,9 @@
     </header>
 
     <main class="container">
-        <section class="card">
-            <h2>Let’s talk about how AI can help your business grow</h2>
+        <section class="hero">
+            <h1>Let's talk about how AI can help your business grow</h1>
+            <img class="hero-img" src="contactus.jpg" alt="Contact Us">
             <p>Fill out the form below and we will get back to you as soon as possible.</p>
         </section>
 
@@ -36,13 +40,13 @@
 
                 <form action="#" method="post">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" required>
 
                     <label for="company">Company</label>
-                    <input type="text" id="company" name="company">
+                    <input type="text" id="company" name="company" placeholder="Company name (optional)">
 
                     <label for="service">Service Interested In</label>
                     <select id="service" name="service">
@@ -54,7 +58,7 @@
                     </select>
 
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
 
                     <button type="submit" class="btn">Send Message</button>
                 </form>
@@ -62,6 +66,7 @@
 
             <div class="card">
                 <h2>Contact Information</h2>
+                <img class="card-img" src="contacti.jpg" alt="Contact Information">
                 <p>Email: <a href="mailto:hello@synergyai.com">hello@synergyai.com</a></p>
                 <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
                 <p>Location: Cl. 40 #46-223, Nte. Centro Historico, Barranquilla, Atlántico</p>
@@ -70,22 +75,24 @@
 
         <section class="card">
             <h2>Find Us</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6663840545234!2d-74.78323822630094!3d10.98853455524828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d0025832995%3A0x6ee5ef55547f7da6!2sRiwi!5e0!3m2!1ses-419!2sco!4v1775867979287!5m2!1ses-419!2sco"
-                width="100%"
-                height="300"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6663840545234!2d-74.78323822630094!3d10.98853455524828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d0025832995%3A0x6ee5ef55547f7da6!2sRiwi!5e0!3m2!1ses-419!2sco!4v1775867979287!5m2!1ses-419!2sco"
+                    title="SynergyIA office location"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>© 2024 Synergy AI. All rights reserved.</p>
+            <p>© 2026 Synergy AI. All rights reserved.</p>
+            <p>Email: <a href="mailto:hello@synergyai.com">hello@synergyai.com</a></p>
         </div>
     </footer>
+
 </body>
 </html>
