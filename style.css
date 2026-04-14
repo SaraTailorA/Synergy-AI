@@ -213,7 +213,7 @@ h3 {
 
 .card-img {
     width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 12px;
     margin: 15px 0;
@@ -323,7 +323,6 @@ h3 {
 }
 
 .btn {
-    /* Aplicado Montserrat */
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     margin-top: 20px;
@@ -438,7 +437,7 @@ summary {
     color: var(--text-main);
     padding: 5px 0;
     transition: var(--transition);
-    list-style: none; /* Quita la flecha por defecto en algunos navegadores */
+    list-style: none; 
 }
 
 summary::before {
