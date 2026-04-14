@@ -63,11 +63,6 @@ This resposity is for an AI consultation company
 - [x] Pill-shaped buttons with hover scaling effect
 - [x] Card components with shadow and levitation on hover
 
-### Responsive
-- [x] Fully responsive layout (mobile, tablet, desktop)
-- [x] CSS Grid with `auto-fit` for adaptive columns
-- [x] Mobile-friendly navigation
-- [x] Responsive images with `max-width: 100%`
 
 ### Accessibility
 - [x] Semantic HTML5 elements (`<header>`, `<main>`, `<nav>`, `<article>`, `<footer>`)
